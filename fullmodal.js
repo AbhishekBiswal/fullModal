@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    $(".fullmodal-modal").hide();
+
     $(".fullmodal").click(function(e){
         e.preventDefault();
         var modal = $(this).attr("data-modal");
