@@ -5,7 +5,7 @@ $(document).ready(function(){
     $(".fullmodal").click(function(e){
         e.preventDefault();
         var modal = $(this).attr("data-modal");
-        $("#"+modal).show();
+        $("#"+modal).fadeIn('slow');
     })
 
     $(".fullmodal-close").click(function(e){
@@ -13,7 +13,7 @@ $(document).ready(function(){
         //alert($(this).html());
         var parent = $(this).closest("div").attr("id");
         //alert(parent);
-        $("#"+parent).hide();
+        $("#"+parent).fadeOut('slow');
     })
 
 })
