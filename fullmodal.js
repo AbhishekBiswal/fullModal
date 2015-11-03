@@ -5,7 +5,8 @@ $(document).ready(function(){
     $(".fullmodal").click(function(e){
         e.preventDefault();
         var modal = $(this).attr("data-modal");
-        $("#"+modal).fadeIn('slow');
+        var url = $(this).attr("data-url");
+        $("#"+modal).load(url).fadeIn('slow');
     })
 
     $(".fullmodal-close").click(function(e){
